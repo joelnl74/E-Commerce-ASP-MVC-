@@ -399,3 +399,9 @@ C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\ru\Microso
 C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\e-commerce-data-access.dll
+C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\e-commerce-data.dll
+C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\e-commerce-utility.dll
+C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\e-commerce-data-access.pdb
+C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\e-commerce-data.pdb
+C:\Dev\E-Commerce-ASP-MVC\e-commerce application-web\bin\Debug\net8.0\e-commerce-utility.pdb

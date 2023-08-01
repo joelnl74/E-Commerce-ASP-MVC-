@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "e-commerce-data/1.0.0": {
+        "runtime": {
+          "e-commerce-data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "e-commerce-data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

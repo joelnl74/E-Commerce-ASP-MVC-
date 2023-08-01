@@ -11,7 +11,10 @@
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.6.23329.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.6.23329.4",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.6.23329.4",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0-preview.6.23360.4"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0-preview.6.23360.4",
+          "e-commerce-data": "1.0.0",
+          "e-commerce-data-access": "1.0.0",
+          "e-commerce-utility": "1.0.0"
         },
         "runtime": {
           "e-commerce application-web.dll": {}
@@ -2658,6 +2661,26 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "e-commerce-data/1.0.0": {
+        "runtime": {
+          "e-commerce-data.dll": {}
+        }
+      },
+      "e-commerce-data-access/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0-preview.6.23329.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.6.23329.4",
+          "e-commerce-data": "1.0.0"
+        },
+        "runtime": {
+          "e-commerce-data-access.dll": {}
+        }
+      },
+      "e-commerce-utility/1.0.0": {
+        "runtime": {
+          "e-commerce-utility.dll": {}
+        }
       }
     }
   },
@@ -4241,6 +4264,21 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "e-commerce-data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "e-commerce-data-access/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "e-commerce-utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -4068,6 +4068,41 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "e-commerce-data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/e-commerce-data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/e-commerce-data.dll": {}
+        }
+      },
+      "e-commerce-data-access/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0-preview.6.23329.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.6.23329.4",
+          "e-commerce-data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/e-commerce-data-access.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/e-commerce-data-access.dll": {}
+        }
+      },
+      "e-commerce-utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/e-commerce-utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/e-commerce-utility.dll": {}
+        }
       }
     }
   },
@@ -11607,6 +11642,21 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "e-commerce-data/1.0.0": {
+      "type": "project",
+      "path": "../e-commerce-data/e-commerce-data.csproj",
+      "msbuildProject": "../e-commerce-data/e-commerce-data.csproj"
+    },
+    "e-commerce-data-access/1.0.0": {
+      "type": "project",
+      "path": "../e-commerce-data-access/e-commerce-data-access.csproj",
+      "msbuildProject": "../e-commerce-data-access/e-commerce-data-access.csproj"
+    },
+    "e-commerce-utility/1.0.0": {
+      "type": "project",
+      "path": "../e-commerce-utility/e-commerce-utility.csproj",
+      "msbuildProject": "../e-commerce-utility/e-commerce-utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11614,7 +11664,10 @@
       "Microsoft.EntityFrameworkCore >= 8.0.0-preview.6.23329.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0-preview.6.23329.4",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0-preview.6.23329.4",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.0-preview.6.23360.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.0-preview.6.23360.4",
+      "e-commerce-data >= 1.0.0",
+      "e-commerce-data-access >= 1.0.0",
+      "e-commerce-utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11649,7 +11702,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Dev\\E-Commerce-ASP-MVC\\e-commerce-data-access\\e-commerce-data-access.csproj": {
+              "projectPath": "C:\\Dev\\E-Commerce-ASP-MVC\\e-commerce-data-access\\e-commerce-data-access.csproj"
+            },
+            "C:\\Dev\\E-Commerce-ASP-MVC\\e-commerce-data\\e-commerce-data.csproj": {
+              "projectPath": "C:\\Dev\\E-Commerce-ASP-MVC\\e-commerce-data\\e-commerce-data.csproj"
+            },
+            "C:\\Dev\\E-Commerce-ASP-MVC\\e-commerce-utility\\e-commerce-utility.csproj": {
+              "projectPath": "C:\\Dev\\E-Commerce-ASP-MVC\\e-commerce-utility\\e-commerce-utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

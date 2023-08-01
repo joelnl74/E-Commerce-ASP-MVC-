@@ -1,0 +1,12 @@
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\bin\Debug\net8.0\e-commerce-utility.deps.json
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\bin\Debug\net8.0\e-commerce-utility.dll
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\bin\Debug\net8.0\e-commerce-utility.pdb
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\e-commerce-utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\e-commerce-utility.AssemblyInfoInputs.cache
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\e-commerce-utility.AssemblyInfo.cs
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\e-commerce-utility.csproj.CoreCompileInputs.cache
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\e-commerce-utility.sourcelink.json
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\e-commerce-utility.dll
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\refint\e-commerce-utility.dll
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\e-commerce-utility.pdb
+C:\Dev\E-Commerce-ASP-MVC\e-commerce-utility\obj\Debug\net8.0\ref\e-commerce-utility.dll
