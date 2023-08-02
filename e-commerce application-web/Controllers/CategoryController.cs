@@ -1,21 +1,22 @@
 ﻿using e_commerce_application_web.Data;
 using e_commerce_application_web.Models;
+using e_commerce_data_access.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace e_commerce_application_web.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public CategoryController(ApplicationDbContext dbContext)
+        public CategoryController(ICategoryRepository categoryRepository)
         {
-            _dbContext = dbContext;
+            _categoryRepository = categoryRepository;
         }
 
         public IActionResult Index()
         {
-            List<Category> categories = _dbContext.Categories.ToList();
+            List<Category> categories = _categoryRepository.GetAll().ToList();
 
             return View(categories);
         }
@@ -33,8 +34,8 @@ namespace e_commerce_application_web.Controllers
                 return View();
             }
 
-            _dbContext.Categories.Add(category);
-            _dbContext.SaveChanges();
+            _categoryRepository.Add(category);
+            _categoryRepository.Save();
 
             TempData["success"] = "Successfully created category!";
 
@@ -49,8 +50,8 @@ namespace e_commerce_application_web.Controllers
                 return View();
             }
 
-            _dbContext.Categories.Update(category);
-            _dbContext.SaveChanges();
+            _categoryRepository.Update(category);
+            _categoryRepository.Save();
 
             TempData["success"] = "Successfully updated category!";
 
@@ -64,7 +65,7 @@ namespace e_commerce_application_web.Controllers
                 return NotFound();
             }
 
-            Category category = _dbContext.Categories.FirstOrDefault(c => c.Id == id);
+            Category? category = _categoryRepository.Get(c => c.Id == id);
 
             if (category == null)
             {
@@ -81,7 +82,7 @@ namespace e_commerce_application_web.Controllers
                 return NotFound();
             }
 
-            Category category = _dbContext.Categories.FirstOrDefault(c => c.Id == id);
+            Category? category = _categoryRepository.Get(c => c.Id == id);
 
             if (category == null)
             {
@@ -99,15 +100,15 @@ namespace e_commerce_application_web.Controllers
                 return NotFound();
             }
 
-            Category category = _dbContext.Categories.FirstOrDefault(c => c.Id == id);
+            Category? category = _categoryRepository.Get(c => c.Id == id);
 
             if (category == null)
             {
                 return BadRequest();
             }
 
-            _dbContext.Categories.Remove(category);
-            _dbContext.SaveChanges();
+            _categoryRepository.Delete(category);
+            _categoryRepository.Save();
             TempData["success"] = "Successfully deleted category!";
 
             return RedirectToAction("Index");
