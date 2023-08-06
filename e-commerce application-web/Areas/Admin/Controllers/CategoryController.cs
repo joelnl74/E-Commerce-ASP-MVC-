@@ -3,8 +3,9 @@ using e_commerce_application_web.Models;
 using e_commerce_data_access.Repository;
 using Microsoft.AspNetCore.Mvc;
 
-namespace e_commerce_application_web.Controllers
+namespace e_commerce_application_web.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly ICategoryRepository _categoryRepository;
