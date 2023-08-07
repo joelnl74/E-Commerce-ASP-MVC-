@@ -15,7 +15,6 @@ namespace e_commerce_data.Models
         public string Author { get; set; }
 
         [Required]
-        [Display(Name = "List Price")]
         [Range(1, 1000)]
         public double Price { get; set; }
     }

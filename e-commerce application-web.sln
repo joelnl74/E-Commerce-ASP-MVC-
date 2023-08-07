@@ -5,11 +5,11 @@ VisualStudioVersion = 17.7.33920.267
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "e-commerce application-web", "e-commerce application-web\e-commerce application-web.csproj", "{DE00FE9F-CA19-45A6-82E1-22F0199B33E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-commerce-data", "e-commerce-data\e-commerce-data.csproj", "{FFDCD427-1013-47D9-8F22-109C3305968B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "e-commerce-data", "e-commerce-data\e-commerce-data.csproj", "{FFDCD427-1013-47D9-8F22-109C3305968B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-commerce-data-access", "e-commerce-data-access\e-commerce-data-access.csproj", "{06653D59-7D34-49B0-ABD0-94AAE6916290}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "e-commerce-data-access", "e-commerce-data-access\e-commerce-data-access.csproj", "{06653D59-7D34-49B0-ABD0-94AAE6916290}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-commerce-utility", "e-commerce-utility\e-commerce-utility.csproj", "{3F09FC33-6D7E-4A77-830B-B1931F0766AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "e-commerce-utility", "e-commerce-utility\e-commerce-utility.csproj", "{3F09FC33-6D7E-4A77-830B-B1931F0766AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
