@@ -1,10 +1,12 @@
 ﻿using e_commerce_application_web.Models;
 using e_commerce_data.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace e_commerce_application_web.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<Category> Categories { get; set; }
@@ -12,6 +14,8 @@ namespace e_commerce_application_web.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, DisplayOrder = 0, Name = "Category A"},
                 new Category { Id = 2, DisplayOrder = 1, Name = "Category B" },
