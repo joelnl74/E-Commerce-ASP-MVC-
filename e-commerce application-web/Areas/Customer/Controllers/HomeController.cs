@@ -27,9 +27,9 @@ namespace e_commerce_application_web.Areas.Customer.Controllers
             return View(products);
         }
 
-        public IActionResult Details(int id)
+        public IActionResult Details(int productId)
         {
-            var product = _productRepository.Get(u => u.Id == id, includeProperties: "Category");
+            Product product = _productRepository.Get(u => u.Id == productId, includeProperties: "Category");
 
             return View(product);
         }

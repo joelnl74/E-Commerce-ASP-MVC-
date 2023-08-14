@@ -38,7 +38,7 @@ namespace e_commerce_data_access.Repository
         public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
         {
             IQueryable<T> query = _dbSet;
-            var result = query.Where(filter);
+            query = query.Where(filter);
 
             if (string.IsNullOrEmpty(includeProperties) == false)
             {
@@ -48,7 +48,7 @@ namespace e_commerce_data_access.Repository
                 }
             }
 
-            return result.FirstOrDefault();
+            return query.FirstOrDefault();
         }
 
         public IEnumerable<T> GetAll(string? includeProperties = null)

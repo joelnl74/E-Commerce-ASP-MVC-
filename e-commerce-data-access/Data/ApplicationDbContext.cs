@@ -19,9 +19,9 @@ namespace e_commerce_application_web.Data
                 );
 
             modelBuilder.Entity<Product>().HasData(
-                new Product { Id = 1, Price = 0, Title = "Title A", Author = "A", ISBN = "12345", Description = "Description A" },
-                new Product { Id = 2, Price = 1, Title = "Title B", Author = "B", ISBN = "23451", Description = "Description B" },
-                new Product { Id = 3, Price = 2, Title = "Title C", Author = "B", ISBN = "51235", Description = "Description C" }
+                new Product { Id = 1, Price = 0, Title = "Title A", Author = "A", ISBN = "12345", ImageUrl = "", CategoryId = 1, Description = "Description A" },
+                new Product { Id = 2, Price = 1, Title = "Title B", Author = "B", ISBN = "23451", ImageUrl = "",  CategoryId = 2, Description = "Description B" },
+                new Product { Id = 3, Price = 2, Title = "Title C", Author = "B", ISBN = "51235", ImageUrl = "", CategoryId = 3, Description = "Description C" }
                 );
         }
     }
